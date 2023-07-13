@@ -77,7 +77,6 @@ const CsharpIntegration = {
                 save_intermediates_to,
                 timeout,
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -86,7 +85,6 @@ const CsharpIntegration = {
                 save_intermediates_to,
                 timeout,
                 status,
-                mode,
             }
         },
         modal() {
