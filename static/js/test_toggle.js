@@ -11,14 +11,14 @@ const CsharpIntegration = {
                 config,
                 is_default,
                 selected_integration: id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 timeout,
             } = this
             return {
                 config,
                 is_default,
                 id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 timeout,
             }
         },
@@ -64,8 +64,8 @@ const CsharpIntegration = {
             // toggle: false,
             config: {},
             error: {},
-            save_intermediates_to: '/data/intermediates/sast',
-            timeout: 0, 
+            // save_intermediates_to: '/data/intermediates/sast',
+            timeout: 0,
         })
     },
     template: `
@@ -91,7 +91,7 @@ const CsharpIntegration = {
                     >
                     <div class="invalid-feedback">[[ error.timeout ]]</div>
 
-                    <h9>Save intermediates to</h9>
+                    <!--<h9>Save intermediates to</h9>
                     <p>
                         <h13>Optional</h13>
                     </p>
@@ -99,7 +99,7 @@ const CsharpIntegration = {
                         placeholder=""
                         v-model="save_intermediates_to"
                         :class="{ 'is-invalid': error.save_intermediates_to }">
-                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
                 </form>
             </div>
         </div>
@@ -108,4 +108,3 @@ const CsharpIntegration = {
 
 
 register_component('scanner-csharp', CsharpIntegration)
-
